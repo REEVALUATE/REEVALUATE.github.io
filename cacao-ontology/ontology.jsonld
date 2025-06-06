@@ -155,6 +155,32 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
+      "@id" : "https://schema.org/Role"
+    }, {
+      "@id" : "https://schema.org/Text"
+    }, {
+      "@id" : "https://schema.org/URL"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://schema.org/Role"
+    }, {
+      "@id" : "https://schema.org/Specialty"
+    }, {
+      "@id" : "https://schema.org/Text"
+    }, {
+      "@id" : "https://schema.org/URL"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
       "@id" : "https://schema.org/Class"
     }, {
       "@id" : "https://schema.org/Enumeration"
@@ -163,7 +189,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -181,7 +207,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/ns/odrl/2/Policy"
+    }, {
+      "@id" : "http://www.w3.org/ns/odrl/2/Rule"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -200,16 +236,6 @@
       "@id" : "http://xmlns.com/foaf/0.1/Organization"
     }, {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/ns/odrl/2/Policy"
-    }, {
-      "@id" : "http://www.w3.org/ns/odrl/2/Rule"
     } ]
   } ]
 }, {
@@ -483,6 +509,12 @@
     "@id" : "http://www.w3.org/ns/odrl/2/use"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -491,6 +523,12 @@
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -524,6 +562,12 @@
 }, {
   "@id" : "http://schema.org/Action",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/CreativeWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Document"
+  } ]
 }, {
   "@id" : "http://schema.org/Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -582,8 +626,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-  }, {
-    "@id" : "http://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Scope note:\nThis class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​\n\nUnlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​\n\nThe classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​\n\nExamples:\n- A registered individual accessing an online museum catalog.​\n- An AI-driven recommendation engine suggesting artifacts to users.​\n- A software bot performing automated data curation tasks.​\"@en"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000003",
@@ -605,6 +650,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Scope note:\nThis class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​\n\nExamples:\n- A digital photograph of an ancient manuscript.​\n- A 3D model of an archaeological excavation site.​\n- The source code of a software application developed to catalog museum collections.​\n- A dataset containing measurements of physical artefacts.\"@en"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000004",
@@ -632,15 +680,31 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2024-11-19T12:02:07Z"
   } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Historical Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "expressedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/Policy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000010",
@@ -665,6 +729,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals\n\nScope note:\nA Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​\n\nSocial movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​\n\nExamples:\n- The Civil Rights Movement in the United States,\n- The Environmental Movement\n- The Feminist Movement,\n- The LGBTQ+ Rights Movement\"@en"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000011",
@@ -689,6 +756,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/cacao/CACAO_0000010"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Wikidata: Q1826286, social and ideological movement in the religious sphere\n\nScope note:\nA Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.\n\nExamples:\n- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​\n- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​\n- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.\"@en"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000012",
@@ -713,6 +783,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/cacao/CACAO_0000010"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Wikidata: Q2198855, period and movement in cultural history\n\nScope note:\nA Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​\n\nExamples:\n- The Renaissance\n- The Romanticism movement\n- The Alté Movement in Nigeria\"@en"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000013",
@@ -736,6 +809,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/cacao/CACAO_0000010"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Wikidata: Q2738074, movement to obtain a political goal\n\nScope note:\nA Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​\n\nExamples:\n- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​\n- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​\n- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union.\""
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000014",
@@ -757,6 +833,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Scope note:\nThis class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​\n\nThe Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \\\"archaeology\\\" or \\\"art history\\\" helps in understanding its scholarly context and the methodologies applied to its study.​\n\nExamples:\n- Archaeology​\n- Art History​\n- Ethnomusicology​\n- Conservation Science\"@en"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000015",
@@ -778,6 +857,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Scope note:\nThis class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​\n\nThe Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \\\"archaeology\\\" or \\\"art history\\\" helps in understanding its scholarly context and the methodologies applied to its study.​\n\nExamples:\n- Archaeology​\n- Art History​\n- Ethnomusicology​\n- Conservation Science\"@en"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000016",
@@ -795,6 +877,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises the concepts, ideas, or qualities that an object, character, or event represents. Symbolism provides a deeper, often abstract, meaning that transcends the literal interpretation of an entity, reflecting cultural, religious, or historical contexts. It serves to connect a physical or conceptual entity to a broader narrative or ideology.\n\nExamples:\n\n- A dove representing peace.\n- The lion as a symbol of courage and royalty.\n- A skull symbolizing death and mortality (memento mori)."
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000017",
@@ -845,6 +930,26 @@
     "@id" : "http://w3id.org/cacao/CACAO_0000010"
   } ]
 }, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:38:37Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000046"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises man-made structures with a roof and walls, created to stand more or less permanently in one place. It serves as a superclass for more specific types of structures defined by their function or form, such as religious, residential, or ceremonial buildings."
+  } ]
+}, {
   "@id" : "http://w3id.org/cacao/CACAO_0000020",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/contributor" : [ {
@@ -864,6 +969,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Scope note:\nThis class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​\n\nAs instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​\n\nMuseums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​\n\nExamples:\n- The British Museum​\n- The Louvre​\n- The Metropolitan Museum of Art​\n- The National Museum of Denmark\"@en"
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000021",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:45:29Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Religious Buildings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000019"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises structures designed and utilized for religious or spiritual activities, including worship, ceremony, and contemplation. These buildings are often characterized by specific architectural forms and iconographic elements that reflect the beliefs and practices of a particular faith or denomination."
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000022",
@@ -885,8 +1013,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
-  }, {
-    "@id" : "https://schema.org/Person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).\n\nArtists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.\n\nIn bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.\n\nExamples:\n- Leonardo da Vinci\n- Frida Kahlo\n- William Shakespeare\n- Maya Deren"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000023",
@@ -998,6 +1127,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Scope note:\nThe Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​\n\n- Music Genres: Such as classical, jazz, rock, or electronic.​\n- Film Genres: Including drama, comedy, thriller, or documentary.​\n- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​\n- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​\n\nInstances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​\n\nExamples:\n- Jazz (music genre)​\n- Film Noir (film genre)​\n- Renaissance Art (artistic genre)​\n- Science Fiction (literary genre)\"@en"
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000028",
@@ -1019,6 +1151,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Scope note:\nThis class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \\\"architecture,\\\" \\\"literature,\\\" or \\\"engineering,\\\" and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​\n\nBy associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. \n\nExamples:\n- Architecture​\n- Literature​\n- Engineering​\n- Performing Arts​\"@en"
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000029",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:45:45Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Churches"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000021"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises buildings specifically designed and used for public Christian worship, prayer, and ceremony. The architectural form and features of a church are often symbolic of Christian beliefs and liturgical practices."
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000030",
@@ -1155,6 +1310,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rdfs:comment \"Scope note:\nThis class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. \n\nExamples:\n- Impressionism\n- Romanticism\n- Modernism\n- Existentialism\"@en"
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000037",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:46:10Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Basilicas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000029"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises churches that have been granted special privileges by the Pope due to their historical, spiritual, or architectural significance. In architectural terms, it can also refer to a building style characterized by a rectangular plan with a central nave and aisles, and an apse at one or both ends."
   } ]
 }, {
   "@id" : "http://w3id.org/cacao/CACAO_0000038",
@@ -1217,7 +1395,891 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://w3id.org/cacao/cacao/cacao-full.owl",
+  "@id" : "http://w3id.org/cacao/CACAO_0000041",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:46:32Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cathedrals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000029"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "This class comprises the principal church of a diocese, containing the bishop's official throne (cathedra). Cathedrals serve as the central church of a region and are often among the most architecturally significant and historically important buildings in their area."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000042",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:47:51Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chapels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000021"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises small places of Christian worship, which may be part of a larger institution (like a cathedral, palace, or hospital), or can be a standalone building. They are often intended for private prayer or smaller services."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000043",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:48:27Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Temples"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000021"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises buildings reserved for religious or spiritual rituals and activities such as prayer and sacrifice. It is a term used for houses of worship in many different religions."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000044",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:48:42Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Domus Ecclesiae"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000021"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises private buildings adapted for Christian worship. These \"house churches\" were the earliest places of public worship for the Christian community, often established within existing residential structures."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000045",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:49:10Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mosques"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000021"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises buildings that serve as places of worship for Muslims. Mosques are characterized by specific features such as a mihrab (prayer niche indicating the direction of Mecca) and a minbar (pulpit)."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000046",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:50:08Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Structures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000023"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises man-made objects that are constructed or organized in a particular way, often on a large scale. This class is a superclass for buildings and other constructed entities that may not be fully enclosed."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000049",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:52:27Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mosaics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000024"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises artworks created by assembling small pieces of material, such as stone, glass, or ceramic, known as tesserae. These pieces are set into an adhesive surface, such as plaster or mortar, to form an image or pattern. Mosaics are typically used to decorate floors, walls, or ceilings."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000050",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:54:47Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Open Spaces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000023"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises unenclosed areas within a built environment that are designed for public use, gathering, or passage. These spaces are defined by the architectural and landscape elements that surround them."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000051",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:54:51Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Forums"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000050"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises public squares or marketplaces in ancient Roman cities, which served as the center for judicial, civic, and commercial activities. They were typically surrounded by public buildings and colonnades."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000052",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:55:50Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Residential Buildings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000019"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises buildings designed and used for human habitation. It encompasses various forms of domestic architecture, from single-family homes to larger, more complex dwellings."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000053",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:56:01Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Houses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000052"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises buildings designed as a dwelling for a single family or a small group of individuals. It is a fundamental unit of residential architecture."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000054",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:56:22Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Villas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000053"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises large, luxurious country houses with substantial grounds. Originally referring to large Roman country estates, the term is now used for significant rural or suburban residences."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000055",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:56:56Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Domus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000053"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises a type of house occupied by the upper classes and some wealthy freedmen during the Roman Republic and Empire."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000056",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:58:09Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Complexes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000023"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises groups of interrelated buildings and structures that are designed to function as a single, integrated unit. These can be defined by a common purpose, architectural style, or historical period."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000057",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:58:22Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cemeteries"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000056"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises designated areas where the remains of deceased people are buried or otherwise interred. They are characterized by the presence of graves, tombs, or other forms of funerary monuments."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000058",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T13:58:31Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Necropolis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000057"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises large, designed cemeteries or burial sites from ancient civilizations. The term literally means \"city of the dead,\" and these sites often feature elaborate tomb structures."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000059",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T14:02:06Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ceremonial Buildings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000019"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises buildings designed primarily for holding rites, ceremonies, or formal public events. Their function may be religious, civic, or commemorative in nature."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000060",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T14:02:13Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tombs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000059"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises structures or chambers used for the burial or interment of the dead. Tombs can range from simple graves to elaborate mausoleums and pyramids."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000061",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T14:10:26Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Painting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000024"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises artworks created by applying paint, pigment, color or other medium to a solid surface (called the \"matrix\" or \"support\") such as a canvas, wall, or panel. The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000062",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:01:48Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Clothing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000023"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises items worn on the body. Typically, clothing is made of fabrics or textiles, but over time it has included garments made from animal skin and other thin sheets of materials and natural products found in the environment, put together."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000063",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:03:15Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Main Garments"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000062"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises the primary items of clothing that form the basis of an outfit, covering the torso and/or lower body."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000064",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:03:22Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outerwear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000062"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises garments worn over other clothes, especially for warmth or protection when outdoors."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000065",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:03:30Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Underwear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000062"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises garments worn next to the skin, underneath other clothing."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000066",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:03:44Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dresses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000063"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises one-piece garments for a woman or girl that consist of a bodice and a skirt."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000067",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:04:01Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Coats"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000063"
+  }, {
+    "@id" : "http://w3id.org/cacao/CACAO_0000064"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises outer garments with sleeves, worn outdoors over other clothes for warmth or protection."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000068",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:04:29Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Plaids"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000063"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises a piece of cloth, typically with a tartan pattern, worn as part of Scottish Highland dress. It is draped over the shoulder as an accessory or used as a blanket."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000069",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:04:34Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Robes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000063"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises long, loose outer garments, often worn as a sign of office or for ceremonial occasions, or informally at home."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000070",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:04:39Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Suits"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000063"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises a set of outer clothes made of the same fabric and designed to be worn together, typically consisting of at least a jacket and trousers or a skirt."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000071",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:04:46Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tunics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000063"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises a simple garment, typically sleeveless or with short sleeves, that hangs from the shoulders to a length between the hips and the knees. It was a common garment in ancient Greece and Rome and remains a feature of some modern clothing styles."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000072",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:06:41Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cloaks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000064"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises sleeveless outdoor overgarments which drape from the shoulders. They are worn for warmth, protection, or as part of ceremonial or formal dress."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000074",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:08:29Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chemises"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000065"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises a simple, loose-fitting garment worn next to the skin, serving as a shirt or undergarment for both men and women in various historical periods. It protected outer garments from sweat and body oils."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000075",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:08:38Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Underpants"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000065"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises undergarments worn on the lower part of the body."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000076",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:08:46Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Underdresses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000065"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises a simple dress-like garment worn underneath a more elaborate outer dress, either for warmth, to provide structure, or to protect the outer layer."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000077",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:09:03Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lingerie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000065"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises women's underwear and nightclothes, often characterized by being lightweight, decorative, and made from fine materials."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000078",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:09:13Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Underskirts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000065"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises skirts worn underneath an outer skirt for warmth, modesty, or to give the outer skirt a desired shape and volume."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000079",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:16:03Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Documents"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000023"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises physical artefacts consisting of a piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000080",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:16:12Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Letters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000079"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises written messages from one person or group to another, conveyed by a postal service or by hand. They are a form of personal or official communication recorded on a physical medium."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000081",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:18:13Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000024"
+  }, {
+    "@id" : "http://w3id.org/cacao/CACAO_0000082"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises small, portable artistic objects, typically made of metal and circular in shape, issued to commemorate a person or event, or as an award for distinction."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000082",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:23:00Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Awards"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000023"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises tangible items given to a person or group in recognition of excellence in a certain field. They serve as a physical token of an honor or prize."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000083",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T16:23:05Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000082"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises trophy cups, which are awards in the form of a drinking vessel, often made of precious metal and mounted on a base, given as a prize in a competition."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000086",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T17:06:03Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Image"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000003"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises digital artefacts that represent visual information, such as a photograph, drawing, or graphic. They are stored as a raster or vector file format."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000087",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T17:06:09Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "3D Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000003"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises digital artefacts that represent a three-dimensional object using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, and curved surfaces."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000088",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T17:06:14Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Video"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000003"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises digital artefacts consisting of a recording of moving visual images. It can include synchronized audio."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/CACAO_0000089",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-0905-7033"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-06-06T17:06:18Z"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Audio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/cacao/CACAO_0000003"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Scope note:\nThis class comprises digital artefacts consisting of sound recordings. This includes music, spoken word, and other forms of auditory information stored in a digital format."
+  } ]
+}, {
+  "@id" : "http://w3id.org/cacao/cacao.owl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "None"
@@ -1229,10 +2291,10 @@
     "@value" : "Cultural Artefact Contextual Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://w3id.org/cacao/cacao/releases/2025-05-11/cacao-full.owl"
+    "@id" : "http://w3id.org/cacao/cacao/releases/2025-06-06/cacao.owl"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "2025-05-11"
+    "@value" : "2025-06-06"
   } ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment",
@@ -1381,8 +2443,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"
-  }, {
-    "@id" : "http://www.w3.org/ns/odrl/2/Asset"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@language" : "en",
@@ -1614,13 +2674,6 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object"
   }, {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-  }, {
-    "@id" : "http://www.w3.org/ns/odrl/2/Party"
-  }, {
-    "@id" : "https://schema.org/Thing"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://schema.org/Person"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@language" : "en",
@@ -1868,9 +2921,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
   } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/Policy"
-  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@language" : "en",
     "@value" : "E30"
@@ -2104,9 +3154,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/Party"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@language" : "en",
@@ -3190,9 +4237,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
   } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/Asset"
-  } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@language" : "en",
     "@value" : "E72"
@@ -3310,8 +4354,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-  }, {
-    "@id" : "http://www.w3.org/ns/odrl/2/Party"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@language" : "en",
@@ -3562,8 +4604,6 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
   }, {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"
-  }, {
-    "@id" : "http://www.w3.org/ns/odrl/2/Asset"
   } ],
   "http://www.w3.org/2004/02/skos/core#notation" : [ {
     "@language" : "en",
@@ -8895,6 +9935,9 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
   } ]
 }, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#Collection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -9770,8 +10813,6 @@
     "@value" : "Agreement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Policy"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
@@ -9933,8 +10974,6 @@
     "@value" : "Assertion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Policy"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
@@ -9974,7 +11013,7 @@
     "@value" : "Asset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -9998,8 +11037,6 @@
     "@value" : "Asset Collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Asset"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
@@ -10196,8 +11233,6 @@
     "@value" : "Offer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Policy"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
@@ -10252,9 +11287,9 @@
     "@value" : "Party"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
   }, {
-    "@id" : "_:genid63"
+    "@id" : "_:genid72"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -10278,8 +11313,6 @@
     "@value" : "Party Collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Party"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
@@ -10347,9 +11380,6 @@
     "@language" : "en",
     "@value" : "Policy"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A non-empty group of Permissions and/or Prohibitions."
@@ -10372,8 +11402,6 @@
     "@value" : "Privacy Policy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Policy"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
@@ -10429,8 +11457,6 @@
     "@value" : "Request"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Policy"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
@@ -10506,8 +11532,6 @@
     "@value" : "Set"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Policy"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
@@ -10535,8 +11559,6 @@
     "@value" : "Ticket"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
-  }, {
     "@id" : "http://www.w3.org/ns/odrl/2/Policy"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
@@ -15113,13 +16135,60 @@
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An agent (eg. person, group, software or physical artifact)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agent"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A document."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Document"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/interest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A page about a topic of interest to this person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Document"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
 }, {
   "@id" : "https://schema.org/AdministrativeArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -15271,12 +16340,6 @@
     "@value" : "Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object"
-  }, {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-  }, {
-    "@id" : "http://www.w3.org/ns/odrl/2/Party"
-  }, {
     "@id" : "https://schema.org/Thing"
   } ]
 }, {
@@ -15411,6 +16474,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://schema.org/Text"
+  } ]
+}, {
+  "@id" : "https://schema.org/WebPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A web page. Every web page is implicitly assumed to be declared to be of type WebPage, so the various properties about that webpage, such as <code>breadcrumb</code> may be used. We recommend explicit declaration if these properties are specified, but if they are found outside of an itemscope, they will be assumed to be about the page."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/WebPage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WebPage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/CreativeWork"
   } ]
 }, {
   "@id" : "https://schema.org/actionApplication",
@@ -16793,6 +17873,8 @@
     "@value" : "Nationality of the person."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+  }, {
     "@id" : "https://schema.org/Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -17120,10 +18202,15 @@
   } ]
 }, {
   "@id" : "https://schema.org/roleName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+  }, {
+    "@id" : "https://schema.org/Role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://schema.org/roleName"
@@ -17131,6 +18218,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "roleName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid52"
   } ]
 }, {
   "@id" : "https://schema.org/runtime",
@@ -17353,6 +18443,28 @@
     "@value" : "softwareRequirements"
   } ]
 }, {
+  "@id" : "https://schema.org/specialty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "One of the domain specialities to which this web page's content applies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+  }, {
+    "@id" : "https://schema.org/WebPage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/specialty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "specialty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid56"
+  } ]
+}, {
   "@id" : "https://schema.org/step",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -17422,7 +18534,7 @@
     "@value" : "Relates a term (i.e. a property, class or enumeration) to one that supersedes it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid52"
+    "@id" : "_:genid61"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://meta.schema.org/supersededBy"
@@ -17432,7 +18544,7 @@
     "@value" : "supersededBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid56"
+    "@id" : "_:genid65"
   } ]
 }, {
   "@id" : "https://schema.org/surface",

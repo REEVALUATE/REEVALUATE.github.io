@@ -1,9 +1,9 @@
-<http://w3id.org/cacao/cacao/cacao-full.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://w3id.org/cacao/cacao/cacao-full.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/cacao/cacao/releases/2025-05-11/cacao-full.owl> .
-<http://w3id.org/cacao/cacao/cacao-full.owl> <http://purl.org/dc/terms/description> "None" .
-<http://w3id.org/cacao/cacao/cacao-full.owl> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/unspecified> .
-<http://w3id.org/cacao/cacao/cacao-full.owl> <http://purl.org/dc/terms/title> "Cultural Artefact Contextual Ontology" .
-<http://w3id.org/cacao/cacao/cacao-full.owl> <http://www.w3.org/2002/07/owl#versionInfo> "2025-05-11" .
+<http://w3id.org/cacao/cacao.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/cacao/cacao.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/cacao/cacao/releases/2025-06-06/cacao.owl> .
+<http://w3id.org/cacao/cacao.owl> <http://purl.org/dc/terms/description> "None" .
+<http://w3id.org/cacao/cacao.owl> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/unspecified> .
+<http://w3id.org/cacao/cacao.owl> <http://purl.org/dc/terms/title> "Cultural Artefact Contextual Ontology" .
+<http://w3id.org/cacao/cacao.owl> <http://www.w3.org/2002/07/owl#versionInfo> "2025-06-06" .
 # 
 # 
 # #################################################################
@@ -12,6 +12,12 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -42,6 +48,9 @@
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#broader
 <http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -108,6 +117,13 @@
 <http://w3id.org/cacao/CACAO_0000004> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> .
 <http://w3id.org/cacao/CACAO_0000004> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/cacao/CACAO_0000016> .
 <http://w3id.org/cacao/CACAO_0000004> <http://www.w3.org/2000/01/rdf-schema#label> "hasSymbolism"@en .
+# 
+# http://w3id.org/cacao/CACAO_0000006
+<http://w3id.org/cacao/CACAO_0000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/cacao/CACAO_0000006> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/cacao/CACAO_0000006> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
+<http://w3id.org/cacao/CACAO_0000006> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Policy> .
+<http://w3id.org/cacao/CACAO_0000006> <http://www.w3.org/2000/01/rdf-schema#label> "expressedBy"@en .
 # 
 # http://w3id.org/cacao/CACAO_0000017
 <http://w3id.org/cacao/CACAO_0000017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -2243,6 +2259,16 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.w3.org/ns/odrl/2/xone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/odrl/2/xone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/odrl/2/operand> .
 # 
+# http://xmlns.com/foaf/0.1/interest
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Document> .
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/2000/01/rdf-schema#comment> "A page about a topic of interest to this person." .
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/2000/01/rdf-schema#label> "interest" .
+<http://xmlns.com/foaf/0.1/interest> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
 # https://schema.org/description
 <https://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Thing> .
@@ -2267,6 +2293,7 @@ _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://schema.org/nationality
 <https://schema.org/nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
 <https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Person> .
 <https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#range> _:genid47 .
 _:genid47 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
@@ -2287,24 +2314,29 @@ _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/nationality> .
 <https://schema.org/nationality> <http://www.w3.org/2000/01/rdf-schema#label> "nationality"@en .
 # 
-# https://schema.org/supersededBy
-<https://schema.org/supersededBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://schema.org/supersededBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid52 .
+# https://schema.org/roleName
+<https://schema.org/roleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Role> .
+<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#range> _:genid52 .
 _:genid52 <http://www.w3.org/2002/07/owl#unionOf> _:genid55 .
 _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Property> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/URL> .
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Enumeration> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Text> .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Class> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Role> .
 _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/supersededBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid56 .
-_:genid56 <http://www.w3.org/2002/07/owl#unionOf> _:genid62 .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+# 
+# https://schema.org/specialty
+<https://schema.org/specialty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/specialty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<https://schema.org/specialty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/WebPage> .
+<https://schema.org/specialty> <http://www.w3.org/2000/01/rdf-schema#range> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#unionOf> _:genid60 .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
@@ -2313,15 +2345,50 @@ _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Text> .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Role> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Specialty> .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Property> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Role> .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Enumeration> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Class> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/specialty> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the domain specialities to which this web page's content applies."@en .
+<https://schema.org/specialty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/specialty> .
+<https://schema.org/specialty> <http://www.w3.org/2000/01/rdf-schema#label> "specialty"@en .
+# 
+# https://schema.org/supersededBy
+<https://schema.org/supersededBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/supersededBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#unionOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Property> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Enumeration> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Class> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/supersededBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#unionOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/URL> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Text> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Role> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Property> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Enumeration> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Class> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://schema.org/supersededBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a term (i.e. a property, class or enumeration) to one that supersedes it."@en .
 <https://schema.org/supersededBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://meta.schema.org/supersededBy> .
 <https://schema.org/supersededBy> <http://www.w3.org/2000/01/rdf-schema#label> "supersededBy"@en .
@@ -2442,8 +2509,16 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Agent> .
+# 
 # http://schema.org/Action
 <http://schema.org/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/CreativeWork> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Document> .
 # 
 # http://schema.org/Organization
 <http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2454,11 +2529,11 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://w3id.org/cacao/CACAO_0000002
 <http://w3id.org/cacao/CACAO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/cacao/CACAO_0000002> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
-<http://w3id.org/cacao/CACAO_0000002> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Party> .
 <http://w3id.org/cacao/CACAO_0000002> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-0905-7033> .
 <http://w3id.org/cacao/CACAO_0000002> <http://purl.org/dc/terms/date> "2024-11-13T16:18:33Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000002> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​\n\nUnlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​\n\nThe classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​\n\nExamples:\n- A registered individual accessing an online museum catalog.​\n- An AI-driven recommendation engine suggesting artifacts to users.​\n- A software bot performing automated data curation tasks.​"@en .
 <http://w3id.org/cacao/CACAO_0000002> <http://www.w3.org/2000/01/rdf-schema#label> "User"@en .
+<http://w3id.org/cacao/CACAO_0000002> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Scope note:\nThis class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​\n\nUnlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​\n\nThe classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​\n\nExamples:\n- A registered individual accessing an online museum catalog.​\n- An AI-driven recommendation engine suggesting artifacts to users.​\n- A software bot performing automated data curation tasks.​\"@en" .
 # 
 # http://w3id.org/cacao/CACAO_0000003
 <http://w3id.org/cacao/CACAO_0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2467,14 +2542,15 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000003> <http://purl.org/dc/terms/date> "2024-11-13T16:20:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000003> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​\n\nExamples:\n- A digital photograph of an ancient manuscript.​\n- A 3D model of an archaeological excavation site.​\n- The source code of a software application developed to catalog museum collections.​\n- A dataset containing measurements of physical artefacts."@en .
 <http://w3id.org/cacao/CACAO_0000003> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Artefact"@en .
+<http://w3id.org/cacao/CACAO_0000003> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Scope note:\nThis class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​\n\nExamples:\n- A digital photograph of an ancient manuscript.​\n- A 3D model of an archaeological excavation site.​\n- The source code of a software application developed to catalog museum collections.​\n- A dataset containing measurements of physical artefacts.\"@en" .
 # 
 # http://w3id.org/cacao/CACAO_0000005
 <http://w3id.org/cacao/CACAO_0000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/cacao/CACAO_0000005> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
 <http://w3id.org/cacao/CACAO_0000005> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-0905-7033> .
 <http://w3id.org/cacao/CACAO_0000005> <http://purl.org/dc/terms/date> "2024-11-19T12:02:07Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://w3id.org/cacao/CACAO_0000005> <http://purl.org/dc/terms/description> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods." .
 <http://w3id.org/cacao/CACAO_0000005> <http://www.w3.org/2000/01/rdf-schema#label> "Historical Event"@en .
+<http://w3id.org/cacao/CACAO_0000005> <http://www.w3.org/2004/02/skos/core#definition> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods." .
 # 
 # http://w3id.org/cacao/CACAO_0000010
 <http://w3id.org/cacao/CACAO_0000010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2484,6 +2560,7 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000010> <http://purl.org/dc/terms/description> "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals" .
 <http://w3id.org/cacao/CACAO_0000010> <http://www.w3.org/2000/01/rdf-schema#comment> "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals\n\nScope note:\nA Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​\n\nSocial movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​\n\nExamples:\n- The Civil Rights Movement in the United States,\n- The Environmental Movement\n- The Feminist Movement,\n- The LGBTQ+ Rights Movement"@en .
 <http://w3id.org/cacao/CACAO_0000010> <http://www.w3.org/2000/01/rdf-schema#label> "Social movement"@en .
+<http://w3id.org/cacao/CACAO_0000010> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals\n\nScope note:\nA Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​\n\nSocial movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​\n\nExamples:\n- The Civil Rights Movement in the United States,\n- The Environmental Movement\n- The Feminist Movement,\n- The LGBTQ+ Rights Movement\"@en" .
 # 
 # http://w3id.org/cacao/CACAO_0000011
 <http://w3id.org/cacao/CACAO_0000011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2493,6 +2570,7 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000011> <http://purl.org/dc/terms/description> "Wikidata: Q1826286, social and ideological movement in the religious sphere" .
 <http://w3id.org/cacao/CACAO_0000011> <http://www.w3.org/2000/01/rdf-schema#comment> "Wikidata: Q1826286, social and ideological movement in the religious sphere\n\nScope note:\nA Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.\n\nExamples:\n- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​\n- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​\n- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s."@en .
 <http://w3id.org/cacao/CACAO_0000011> <http://www.w3.org/2000/01/rdf-schema#label> "Religious movement"@en .
+<http://w3id.org/cacao/CACAO_0000011> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Wikidata: Q1826286, social and ideological movement in the religious sphere\n\nScope note:\nA Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.\n\nExamples:\n- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​\n- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​\n- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.\"@en" .
 # 
 # http://w3id.org/cacao/CACAO_0000012
 <http://w3id.org/cacao/CACAO_0000012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2502,6 +2580,7 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000012> <http://purl.org/dc/terms/description> "Wikidata: Q2198855, period and movement in cultural history" .
 <http://w3id.org/cacao/CACAO_0000012> <http://www.w3.org/2000/01/rdf-schema#comment> "Wikidata: Q2198855, period and movement in cultural history\n\nScope note:\nA Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​\n\nExamples:\n- The Renaissance\n- The Romanticism movement\n- The Alté Movement in Nigeria"@en .
 <http://w3id.org/cacao/CACAO_0000012> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural movement"@en .
+<http://w3id.org/cacao/CACAO_0000012> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Wikidata: Q2198855, period and movement in cultural history\n\nScope note:\nA Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​\n\nExamples:\n- The Renaissance\n- The Romanticism movement\n- The Alté Movement in Nigeria\"@en" .
 # 
 # http://w3id.org/cacao/CACAO_0000013
 <http://w3id.org/cacao/CACAO_0000013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2511,6 +2590,7 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000013> <http://purl.org/dc/terms/description> "Wikidata: Q2738074, movement to obtain a political goal" .
 <http://w3id.org/cacao/CACAO_0000013> <http://www.w3.org/2000/01/rdf-schema#comment> "Wikidata: Q2738074, movement to obtain a political goal\n\nScope note:\nA Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​\n\nExamples:\n- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​\n- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​\n- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union." .
 <http://w3id.org/cacao/CACAO_0000013> <http://www.w3.org/2000/01/rdf-schema#label> "Political movement"@en .
+<http://w3id.org/cacao/CACAO_0000013> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Wikidata: Q2738074, movement to obtain a political goal\n\nScope note:\nA Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​\n\nExamples:\n- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​\n- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​\n- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union.\"" .
 # 
 # http://w3id.org/cacao/CACAO_0000014
 <http://w3id.org/cacao/CACAO_0000014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2519,6 +2599,7 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000014> <http://purl.org/dc/terms/date> "2024-12-06T13:27:25Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000014> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​\n\nThe Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \"archaeology\" or \"art history\" helps in understanding its scholarly context and the methodologies applied to its study.​\n\nExamples:\n- Archaeology​\n- Art History​\n- Ethnomusicology​\n- Conservation Science"@en .
 <http://w3id.org/cacao/CACAO_0000014> <http://www.w3.org/2000/01/rdf-schema#label> "Domain"@en .
+<http://w3id.org/cacao/CACAO_0000014> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Scope note:\nThis class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​\n\nThe Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \\\"archaeology\\\" or \\\"art history\\\" helps in understanding its scholarly context and the methodologies applied to its study.​\n\nExamples:\n- Archaeology​\n- Art History​\n- Ethnomusicology​\n- Conservation Science\"@en" .
 # 
 # http://w3id.org/cacao/CACAO_0000015
 <http://w3id.org/cacao/CACAO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2527,6 +2608,7 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000015> <http://purl.org/dc/terms/date> "2024-12-06T13:30:25Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000015> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nEconomic Relevance pertains to concepts that define the economic significance or impact of entities, events, or activities. This class encompasses terms and categories used to classify and assess the economic aspects of cultural heritage items, historical events, or societal practices.\n\nExamples:\n- The economic impact of the Silk Road trade routes on participating civilizations.​\n- The assessment of a museum's collection in terms of its monetary value and contribution to tourism revenue.​\n- Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets."@en .
 <http://w3id.org/cacao/CACAO_0000015> <http://www.w3.org/2000/01/rdf-schema#label> "Economic Relevance"@en .
+<http://w3id.org/cacao/CACAO_0000015> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Scope note:\nThis class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​\n\nThe Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \\\"archaeology\\\" or \\\"art history\\\" helps in understanding its scholarly context and the methodologies applied to its study.​\n\nExamples:\n- Archaeology​\n- Art History​\n- Ethnomusicology​\n- Conservation Science\"@en" .
 # 
 # http://w3id.org/cacao/CACAO_0000016
 <http://w3id.org/cacao/CACAO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2534,6 +2616,15 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000016> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-0905-7033> .
 <http://w3id.org/cacao/CACAO_0000016> <http://purl.org/dc/terms/date> "2024-12-06T13:43:53Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000016> <http://www.w3.org/2000/01/rdf-schema#label> "Symbolism"@en .
+<http://w3id.org/cacao/CACAO_0000016> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises the concepts, ideas, or qualities that an object, character, or event represents. Symbolism provides a deeper, often abstract, meaning that transcends the literal interpretation of an entity, reflecting cultural, religious, or historical contexts. It serves to connect a physical or conceptual entity to a broader narrative or ideology.\n\nExamples:\n\n- A dove representing peace.\n- The lion as a symbol of courage and royalty.\n- A skull symbolizing death and mortality (memento mori)." .
+# 
+# http://w3id.org/cacao/CACAO_0000019
+<http://w3id.org/cacao/CACAO_0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000019> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000046> .
+<http://w3id.org/cacao/CACAO_0000019> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000019> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:38:37Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000019> <http://www.w3.org/2000/01/rdf-schema#label> "Building"@en .
+<http://w3id.org/cacao/CACAO_0000019> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises man-made structures with a roof and walls, created to stand more or less permanently in one place. It serves as a superclass for more specific types of structures defined by their function or form, such as religious, residential, or ceremonial buildings." .
 # 
 # http://w3id.org/cacao/CACAO_0000020
 <http://w3id.org/cacao/CACAO_0000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2542,15 +2633,24 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000020> <http://purl.org/dc/terms/date> "2025-04-11T08:31:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000020> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​\n\nAs instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​\n\nMuseums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​\n\nExamples:\n- The British Museum​\n- The Louvre​\n- The Metropolitan Museum of Art​\n- The National Museum of Denmark"@en .
 <http://w3id.org/cacao/CACAO_0000020> <http://www.w3.org/2000/01/rdf-schema#label> "Museum"@en .
+<http://w3id.org/cacao/CACAO_0000020> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Scope note:\nThis class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​\n\nAs instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​\n\nMuseums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​\n\nExamples:\n- The British Museum​\n- The Louvre​\n- The Metropolitan Museum of Art​\n- The National Museum of Denmark\"@en" .
+# 
+# http://w3id.org/cacao/CACAO_0000021
+<http://w3id.org/cacao/CACAO_0000021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000021> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000019> .
+<http://w3id.org/cacao/CACAO_0000021> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000021> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:45:29Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000021> <http://www.w3.org/2000/01/rdf-schema#label> "Religious Buildings"@en .
+<http://w3id.org/cacao/CACAO_0000021> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises structures designed and utilized for religious or spiritual activities, including worship, ceremony, and contemplation. These buildings are often characterized by specific architectural forms and iconographic elements that reflect the beliefs and practices of a particular faith or denomination." .
 # 
 # http://w3id.org/cacao/CACAO_0000022
 <http://w3id.org/cacao/CACAO_0000022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/cacao/CACAO_0000022> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
-<http://w3id.org/cacao/CACAO_0000022> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Person> .
 <http://w3id.org/cacao/CACAO_0000022> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-0905-7033> .
 <http://w3id.org/cacao/CACAO_0000022> <http://purl.org/dc/terms/date> "2025-04-11T08:32:18Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000022> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).\n\nArtists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.\n\nIn bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.\n\nExamples:\n- Leonardo da Vinci\n- Frida Kahlo\n- William Shakespeare\n- Maya Deren"@en .
 <http://w3id.org/cacao/CACAO_0000022> <http://www.w3.org/2000/01/rdf-schema#label> "Artist"@en .
+<http://w3id.org/cacao/CACAO_0000022> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).\n\nArtists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.\n\nIn bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.\n\nExamples:\n- Leonardo da Vinci\n- Frida Kahlo\n- William Shakespeare\n- Maya Deren" .
 # 
 # http://w3id.org/cacao/CACAO_0000023
 <http://w3id.org/cacao/CACAO_0000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2583,6 +2683,7 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000027> <http://purl.org/dc/terms/date> "2025-04-11T11:18:31Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000027> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThe Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​\n\n- Music Genres: Such as classical, jazz, rock, or electronic.​\n- Film Genres: Including drama, comedy, thriller, or documentary.​\n- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​\n- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​\n\nInstances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​\n\nExamples:\n- Jazz (music genre)​\n- Film Noir (film genre)​\n- Renaissance Art (artistic genre)​\n- Science Fiction (literary genre)"@en .
 <http://w3id.org/cacao/CACAO_0000027> <http://www.w3.org/2000/01/rdf-schema#label> "Genre"@en .
+<http://w3id.org/cacao/CACAO_0000027> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Scope note:\nThe Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​\n\n- Music Genres: Such as classical, jazz, rock, or electronic.​\n- Film Genres: Including drama, comedy, thriller, or documentary.​\n- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​\n- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​\n\nInstances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​\n\nExamples:\n- Jazz (music genre)​\n- Film Noir (film genre)​\n- Renaissance Art (artistic genre)​\n- Science Fiction (literary genre)\"@en" .
 # 
 # http://w3id.org/cacao/CACAO_0000028
 <http://w3id.org/cacao/CACAO_0000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2591,6 +2692,15 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000028> <http://purl.org/dc/terms/date> "2025-04-11T11:18:41Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000028> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \"architecture,\" \"literature,\" or \"engineering,\" and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​\n\nBy associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. \n\nExamples:\n- Architecture​\n- Literature​\n- Engineering​\n- Performing Arts​"@en .
 <http://w3id.org/cacao/CACAO_0000028> <http://www.w3.org/2000/01/rdf-schema#label> "Field Of Work"@en .
+<http://w3id.org/cacao/CACAO_0000028> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Scope note:\nThis class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \\\"architecture,\\\" \\\"literature,\\\" or \\\"engineering,\\\" and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​\n\nBy associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. \n\nExamples:\n- Architecture​\n- Literature​\n- Engineering​\n- Performing Arts​\"@en" .
+# 
+# http://w3id.org/cacao/CACAO_0000029
+<http://w3id.org/cacao/CACAO_0000029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000029> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000021> .
+<http://w3id.org/cacao/CACAO_0000029> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000029> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:45:45Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000029> <http://www.w3.org/2000/01/rdf-schema#label> "Churches"@en .
+<http://w3id.org/cacao/CACAO_0000029> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises buildings specifically designed and used for public Christian worship, prayer, and ceremony. The architectural form and features of a church are often symbolic of Christian beliefs and liturgical practices." .
 # 
 # http://w3id.org/cacao/CACAO_0000036
 <http://w3id.org/cacao/CACAO_0000036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2599,6 +2709,369 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://w3id.org/cacao/CACAO_0000036> <http://purl.org/dc/terms/date> "2025-04-12T09:17:34Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000036> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. \n\nExamples:\n- Impressionism\n- Romanticism\n- Modernism\n- Existentialism"@en .
 <http://w3id.org/cacao/CACAO_0000036> <http://www.w3.org/2000/01/rdf-schema#label> "Movement"@en .
+<http://w3id.org/cacao/CACAO_0000036> <http://www.w3.org/2004/02/skos/core#definition> "rdfs:comment \"Scope note:\nThis class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. \n\nExamples:\n- Impressionism\n- Romanticism\n- Modernism\n- Existentialism\"@en" .
+# 
+# http://w3id.org/cacao/CACAO_0000037
+<http://w3id.org/cacao/CACAO_0000037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000037> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000029> .
+<http://w3id.org/cacao/CACAO_0000037> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000037> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:46:10Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000037> <http://www.w3.org/2000/01/rdf-schema#label> "Basilicas"@en .
+<http://w3id.org/cacao/CACAO_0000037> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises churches that have been granted special privileges by the Pope due to their historical, spiritual, or architectural significance. In architectural terms, it can also refer to a building style characterized by a rectangular plan with a central nave and aisles, and an apse at one or both ends." .
+# 
+# http://w3id.org/cacao/CACAO_0000041
+<http://w3id.org/cacao/CACAO_0000041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000041> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000029> .
+<http://w3id.org/cacao/CACAO_0000041> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000041> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:46:32Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000041> <http://www.w3.org/2000/01/rdf-schema#label> "Cathedrals"@en .
+<http://w3id.org/cacao/CACAO_0000041> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises the principal church of a diocese, containing the bishop's official throne (cathedra). Cathedrals serve as the central church of a region and are often among the most architecturally significant and historically important buildings in their area." .
+# 
+# http://w3id.org/cacao/CACAO_0000042
+<http://w3id.org/cacao/CACAO_0000042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000042> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000021> .
+<http://w3id.org/cacao/CACAO_0000042> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000042> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:47:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000042> <http://www.w3.org/2000/01/rdf-schema#label> "Chapels"@en .
+<http://w3id.org/cacao/CACAO_0000042> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises small places of Christian worship, which may be part of a larger institution (like a cathedral, palace, or hospital), or can be a standalone building. They are often intended for private prayer or smaller services." .
+# 
+# http://w3id.org/cacao/CACAO_0000043
+<http://w3id.org/cacao/CACAO_0000043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000043> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000021> .
+<http://w3id.org/cacao/CACAO_0000043> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000043> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:48:27Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000043> <http://www.w3.org/2000/01/rdf-schema#label> "Temples"@en .
+<http://w3id.org/cacao/CACAO_0000043> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises buildings reserved for religious or spiritual rituals and activities such as prayer and sacrifice. It is a term used for houses of worship in many different religions." .
+# 
+# http://w3id.org/cacao/CACAO_0000044
+<http://w3id.org/cacao/CACAO_0000044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000044> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000021> .
+<http://w3id.org/cacao/CACAO_0000044> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000044> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:48:42Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000044> <http://www.w3.org/2000/01/rdf-schema#label> "Domus Ecclesiae"@en .
+<http://w3id.org/cacao/CACAO_0000044> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises private buildings adapted for Christian worship. These \"house churches\" were the earliest places of public worship for the Christian community, often established within existing residential structures." .
+# 
+# http://w3id.org/cacao/CACAO_0000045
+<http://w3id.org/cacao/CACAO_0000045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000045> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000021> .
+<http://w3id.org/cacao/CACAO_0000045> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000045> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:49:10Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000045> <http://www.w3.org/2000/01/rdf-schema#label> "Mosques"@en .
+<http://w3id.org/cacao/CACAO_0000045> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises buildings that serve as places of worship for Muslims. Mosques are characterized by specific features such as a mihrab (prayer niche indicating the direction of Mecca) and a minbar (pulpit)." .
+# 
+# http://w3id.org/cacao/CACAO_0000046
+<http://w3id.org/cacao/CACAO_0000046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000046> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000023> .
+<http://w3id.org/cacao/CACAO_0000046> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000046> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:50:08Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000046> <http://www.w3.org/2000/01/rdf-schema#label> "Structures"@en .
+<http://w3id.org/cacao/CACAO_0000046> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises man-made objects that are constructed or organized in a particular way, often on a large scale. This class is a superclass for buildings and other constructed entities that may not be fully enclosed." .
+# 
+# http://w3id.org/cacao/CACAO_0000049
+<http://w3id.org/cacao/CACAO_0000049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000049> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000024> .
+<http://w3id.org/cacao/CACAO_0000049> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000049> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:52:27Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000049> <http://www.w3.org/2000/01/rdf-schema#label> "Mosaics"@en .
+<http://w3id.org/cacao/CACAO_0000049> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises artworks created by assembling small pieces of material, such as stone, glass, or ceramic, known as tesserae. These pieces are set into an adhesive surface, such as plaster or mortar, to form an image or pattern. Mosaics are typically used to decorate floors, walls, or ceilings." .
+# 
+# http://w3id.org/cacao/CACAO_0000050
+<http://w3id.org/cacao/CACAO_0000050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000050> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000023> .
+<http://w3id.org/cacao/CACAO_0000050> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000050> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:54:47Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000050> <http://www.w3.org/2000/01/rdf-schema#label> "Open Spaces"@en .
+<http://w3id.org/cacao/CACAO_0000050> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises unenclosed areas within a built environment that are designed for public use, gathering, or passage. These spaces are defined by the architectural and landscape elements that surround them." .
+# 
+# http://w3id.org/cacao/CACAO_0000051
+<http://w3id.org/cacao/CACAO_0000051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000051> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000050> .
+<http://w3id.org/cacao/CACAO_0000051> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000051> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:54:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000051> <http://www.w3.org/2000/01/rdf-schema#label> "Forums"@en .
+<http://w3id.org/cacao/CACAO_0000051> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises public squares or marketplaces in ancient Roman cities, which served as the center for judicial, civic, and commercial activities. They were typically surrounded by public buildings and colonnades." .
+# 
+# http://w3id.org/cacao/CACAO_0000052
+<http://w3id.org/cacao/CACAO_0000052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000052> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000019> .
+<http://w3id.org/cacao/CACAO_0000052> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000052> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:55:50Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000052> <http://www.w3.org/2000/01/rdf-schema#label> "Residential Buildings"@en .
+<http://w3id.org/cacao/CACAO_0000052> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises buildings designed and used for human habitation. It encompasses various forms of domestic architecture, from single-family homes to larger, more complex dwellings." .
+# 
+# http://w3id.org/cacao/CACAO_0000053
+<http://w3id.org/cacao/CACAO_0000053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000053> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000052> .
+<http://w3id.org/cacao/CACAO_0000053> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000053> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:56:01Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000053> <http://www.w3.org/2000/01/rdf-schema#label> "Houses"@en .
+<http://w3id.org/cacao/CACAO_0000053> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises buildings designed as a dwelling for a single family or a small group of individuals. It is a fundamental unit of residential architecture." .
+# 
+# http://w3id.org/cacao/CACAO_0000054
+<http://w3id.org/cacao/CACAO_0000054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000054> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000053> .
+<http://w3id.org/cacao/CACAO_0000054> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000054> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:56:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000054> <http://www.w3.org/2000/01/rdf-schema#label> "Villas"@en .
+<http://w3id.org/cacao/CACAO_0000054> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises large, luxurious country houses with substantial grounds. Originally referring to large Roman country estates, the term is now used for significant rural or suburban residences." .
+# 
+# http://w3id.org/cacao/CACAO_0000055
+<http://w3id.org/cacao/CACAO_0000055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000055> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000053> .
+<http://w3id.org/cacao/CACAO_0000055> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000055> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:56:56Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000055> <http://www.w3.org/2000/01/rdf-schema#label> "Domus"@en .
+<http://w3id.org/cacao/CACAO_0000055> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises a type of house occupied by the upper classes and some wealthy freedmen during the Roman Republic and Empire." .
+# 
+# http://w3id.org/cacao/CACAO_0000056
+<http://w3id.org/cacao/CACAO_0000056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000056> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000023> .
+<http://w3id.org/cacao/CACAO_0000056> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000056> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:58:09Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000056> <http://www.w3.org/2000/01/rdf-schema#label> "Complexes"@en .
+<http://w3id.org/cacao/CACAO_0000056> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises groups of interrelated buildings and structures that are designed to function as a single, integrated unit. These can be defined by a common purpose, architectural style, or historical period." .
+# 
+# http://w3id.org/cacao/CACAO_0000057
+<http://w3id.org/cacao/CACAO_0000057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000057> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000056> .
+<http://w3id.org/cacao/CACAO_0000057> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000057> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:58:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000057> <http://www.w3.org/2000/01/rdf-schema#label> "Cemeteries"@en .
+<http://w3id.org/cacao/CACAO_0000057> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises designated areas where the remains of deceased people are buried or otherwise interred. They are characterized by the presence of graves, tombs, or other forms of funerary monuments." .
+# 
+# http://w3id.org/cacao/CACAO_0000058
+<http://w3id.org/cacao/CACAO_0000058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000058> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000057> .
+<http://w3id.org/cacao/CACAO_0000058> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000058> <http://purl.org/dc/elements/1.1/date> "2025-06-06T13:58:31Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000058> <http://www.w3.org/2000/01/rdf-schema#label> "Necropolis"@en .
+<http://w3id.org/cacao/CACAO_0000058> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises large, designed cemeteries or burial sites from ancient civilizations. The term literally means \"city of the dead,\" and these sites often feature elaborate tomb structures." .
+# 
+# http://w3id.org/cacao/CACAO_0000059
+<http://w3id.org/cacao/CACAO_0000059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000059> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000019> .
+<http://w3id.org/cacao/CACAO_0000059> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000059> <http://purl.org/dc/elements/1.1/date> "2025-06-06T14:02:06Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000059> <http://www.w3.org/2000/01/rdf-schema#label> "Ceremonial Buildings"@en .
+<http://w3id.org/cacao/CACAO_0000059> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises buildings designed primarily for holding rites, ceremonies, or formal public events. Their function may be religious, civic, or commemorative in nature." .
+# 
+# http://w3id.org/cacao/CACAO_0000060
+<http://w3id.org/cacao/CACAO_0000060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000060> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000059> .
+<http://w3id.org/cacao/CACAO_0000060> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000060> <http://purl.org/dc/elements/1.1/date> "2025-06-06T14:02:13Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000060> <http://www.w3.org/2000/01/rdf-schema#label> "Tombs"@en .
+<http://w3id.org/cacao/CACAO_0000060> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises structures or chambers used for the burial or interment of the dead. Tombs can range from simple graves to elaborate mausoleums and pyramids." .
+# 
+# http://w3id.org/cacao/CACAO_0000061
+<http://w3id.org/cacao/CACAO_0000061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000061> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000024> .
+<http://w3id.org/cacao/CACAO_0000061> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000061> <http://purl.org/dc/elements/1.1/date> "2025-06-06T14:10:26Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000061> <http://www.w3.org/2000/01/rdf-schema#label> "Painting"@en .
+<http://w3id.org/cacao/CACAO_0000061> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises artworks created by applying paint, pigment, color or other medium to a solid surface (called the \"matrix\" or \"support\") such as a canvas, wall, or panel. The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used." .
+# 
+# http://w3id.org/cacao/CACAO_0000062
+<http://w3id.org/cacao/CACAO_0000062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000062> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000023> .
+<http://w3id.org/cacao/CACAO_0000062> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000062> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:01:48Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000062> <http://www.w3.org/2000/01/rdf-schema#label> "Clothing"@en .
+<http://w3id.org/cacao/CACAO_0000062> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises items worn on the body. Typically, clothing is made of fabrics or textiles, but over time it has included garments made from animal skin and other thin sheets of materials and natural products found in the environment, put together." .
+# 
+# http://w3id.org/cacao/CACAO_0000063
+<http://w3id.org/cacao/CACAO_0000063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000063> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000062> .
+<http://w3id.org/cacao/CACAO_0000063> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000063> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:03:15Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000063> <http://www.w3.org/2000/01/rdf-schema#label> "Main Garments"@en .
+<http://w3id.org/cacao/CACAO_0000063> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises the primary items of clothing that form the basis of an outfit, covering the torso and/or lower body." .
+# 
+# http://w3id.org/cacao/CACAO_0000064
+<http://w3id.org/cacao/CACAO_0000064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000064> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000062> .
+<http://w3id.org/cacao/CACAO_0000064> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000064> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:03:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000064> <http://www.w3.org/2000/01/rdf-schema#label> "Outerwear"@en .
+<http://w3id.org/cacao/CACAO_0000064> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises garments worn over other clothes, especially for warmth or protection when outdoors." .
+# 
+# http://w3id.org/cacao/CACAO_0000065
+<http://w3id.org/cacao/CACAO_0000065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000065> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000062> .
+<http://w3id.org/cacao/CACAO_0000065> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000065> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:03:30Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000065> <http://www.w3.org/2000/01/rdf-schema#label> "Underwear"@en .
+<http://w3id.org/cacao/CACAO_0000065> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises garments worn next to the skin, underneath other clothing." .
+# 
+# http://w3id.org/cacao/CACAO_0000066
+<http://w3id.org/cacao/CACAO_0000066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000066> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000063> .
+<http://w3id.org/cacao/CACAO_0000066> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000066> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:03:44Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000066> <http://www.w3.org/2000/01/rdf-schema#label> "Dresses"@en .
+<http://w3id.org/cacao/CACAO_0000066> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises one-piece garments for a woman or girl that consist of a bodice and a skirt." .
+# 
+# http://w3id.org/cacao/CACAO_0000067
+<http://w3id.org/cacao/CACAO_0000067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000067> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000063> .
+<http://w3id.org/cacao/CACAO_0000067> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000064> .
+<http://w3id.org/cacao/CACAO_0000067> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000067> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:04:01Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000067> <http://www.w3.org/2000/01/rdf-schema#label> "Coats"@en .
+<http://w3id.org/cacao/CACAO_0000067> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises outer garments with sleeves, worn outdoors over other clothes for warmth or protection." .
+# 
+# http://w3id.org/cacao/CACAO_0000068
+<http://w3id.org/cacao/CACAO_0000068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000068> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000063> .
+<http://w3id.org/cacao/CACAO_0000068> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000068> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:04:29Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000068> <http://www.w3.org/2000/01/rdf-schema#label> "Plaids"@en .
+<http://w3id.org/cacao/CACAO_0000068> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises a piece of cloth, typically with a tartan pattern, worn as part of Scottish Highland dress. It is draped over the shoulder as an accessory or used as a blanket." .
+# 
+# http://w3id.org/cacao/CACAO_0000069
+<http://w3id.org/cacao/CACAO_0000069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000069> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000063> .
+<http://w3id.org/cacao/CACAO_0000069> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000069> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:04:34Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000069> <http://www.w3.org/2000/01/rdf-schema#label> "Robes"@en .
+<http://w3id.org/cacao/CACAO_0000069> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises long, loose outer garments, often worn as a sign of office or for ceremonial occasions, or informally at home." .
+# 
+# http://w3id.org/cacao/CACAO_0000070
+<http://w3id.org/cacao/CACAO_0000070> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000070> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000063> .
+<http://w3id.org/cacao/CACAO_0000070> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000070> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:04:39Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000070> <http://www.w3.org/2000/01/rdf-schema#label> "Suits"@en .
+<http://w3id.org/cacao/CACAO_0000070> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises a set of outer clothes made of the same fabric and designed to be worn together, typically consisting of at least a jacket and trousers or a skirt." .
+# 
+# http://w3id.org/cacao/CACAO_0000071
+<http://w3id.org/cacao/CACAO_0000071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000071> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000063> .
+<http://w3id.org/cacao/CACAO_0000071> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000071> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:04:46Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000071> <http://www.w3.org/2000/01/rdf-schema#label> "Tunics"@en .
+<http://w3id.org/cacao/CACAO_0000071> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises a simple garment, typically sleeveless or with short sleeves, that hangs from the shoulders to a length between the hips and the knees. It was a common garment in ancient Greece and Rome and remains a feature of some modern clothing styles." .
+# 
+# http://w3id.org/cacao/CACAO_0000072
+<http://w3id.org/cacao/CACAO_0000072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000072> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000064> .
+<http://w3id.org/cacao/CACAO_0000072> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000072> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:06:41Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000072> <http://www.w3.org/2000/01/rdf-schema#label> "Cloaks"@en .
+<http://w3id.org/cacao/CACAO_0000072> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises sleeveless outdoor overgarments which drape from the shoulders. They are worn for warmth, protection, or as part of ceremonial or formal dress." .
+# 
+# http://w3id.org/cacao/CACAO_0000074
+<http://w3id.org/cacao/CACAO_0000074> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000074> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000065> .
+<http://w3id.org/cacao/CACAO_0000074> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000074> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:08:29Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000074> <http://www.w3.org/2000/01/rdf-schema#label> "Chemises"@en .
+<http://w3id.org/cacao/CACAO_0000074> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises a simple, loose-fitting garment worn next to the skin, serving as a shirt or undergarment for both men and women in various historical periods. It protected outer garments from sweat and body oils." .
+# 
+# http://w3id.org/cacao/CACAO_0000075
+<http://w3id.org/cacao/CACAO_0000075> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000075> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000065> .
+<http://w3id.org/cacao/CACAO_0000075> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000075> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:08:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000075> <http://www.w3.org/2000/01/rdf-schema#label> "Underpants"@en .
+<http://w3id.org/cacao/CACAO_0000075> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises undergarments worn on the lower part of the body." .
+# 
+# http://w3id.org/cacao/CACAO_0000076
+<http://w3id.org/cacao/CACAO_0000076> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000076> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000065> .
+<http://w3id.org/cacao/CACAO_0000076> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000076> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:08:46Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000076> <http://www.w3.org/2000/01/rdf-schema#label> "Underdresses"@en .
+<http://w3id.org/cacao/CACAO_0000076> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises a simple dress-like garment worn underneath a more elaborate outer dress, either for warmth, to provide structure, or to protect the outer layer." .
+# 
+# http://w3id.org/cacao/CACAO_0000077
+<http://w3id.org/cacao/CACAO_0000077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000077> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000065> .
+<http://w3id.org/cacao/CACAO_0000077> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000077> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:09:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000077> <http://www.w3.org/2000/01/rdf-schema#label> "Lingerie"@en .
+<http://w3id.org/cacao/CACAO_0000077> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises women's underwear and nightclothes, often characterized by being lightweight, decorative, and made from fine materials." .
+# 
+# http://w3id.org/cacao/CACAO_0000078
+<http://w3id.org/cacao/CACAO_0000078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000078> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000065> .
+<http://w3id.org/cacao/CACAO_0000078> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000078> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:09:13Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000078> <http://www.w3.org/2000/01/rdf-schema#label> "Underskirts"@en .
+<http://w3id.org/cacao/CACAO_0000078> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises skirts worn underneath an outer skirt for warmth, modesty, or to give the outer skirt a desired shape and volume." .
+# 
+# http://w3id.org/cacao/CACAO_0000079
+<http://w3id.org/cacao/CACAO_0000079> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000079> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000023> .
+<http://w3id.org/cacao/CACAO_0000079> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000079> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:16:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000079> <http://www.w3.org/2000/01/rdf-schema#label> "Documents"@en .
+<http://w3id.org/cacao/CACAO_0000079> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises physical artefacts consisting of a piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record." .
+# 
+# http://w3id.org/cacao/CACAO_0000080
+<http://w3id.org/cacao/CACAO_0000080> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000080> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000079> .
+<http://w3id.org/cacao/CACAO_0000080> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000080> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:16:12Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000080> <http://www.w3.org/2000/01/rdf-schema#label> "Letters"@en .
+<http://w3id.org/cacao/CACAO_0000080> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises written messages from one person or group to another, conveyed by a postal service or by hand. They are a form of personal or official communication recorded on a physical medium." .
+# 
+# http://w3id.org/cacao/CACAO_0000081
+<http://w3id.org/cacao/CACAO_0000081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000081> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000024> .
+<http://w3id.org/cacao/CACAO_0000081> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000082> .
+<http://w3id.org/cacao/CACAO_0000081> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000081> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:18:13Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000081> <http://www.w3.org/2000/01/rdf-schema#label> "Medals"@en .
+<http://w3id.org/cacao/CACAO_0000081> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises small, portable artistic objects, typically made of metal and circular in shape, issued to commemorate a person or event, or as an award for distinction." .
+# 
+# http://w3id.org/cacao/CACAO_0000082
+<http://w3id.org/cacao/CACAO_0000082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000082> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000023> .
+<http://w3id.org/cacao/CACAO_0000082> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000082> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:23:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000082> <http://www.w3.org/2000/01/rdf-schema#label> "Awards"@en .
+<http://w3id.org/cacao/CACAO_0000082> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises tangible items given to a person or group in recognition of excellence in a certain field. They serve as a physical token of an honor or prize." .
+# 
+# http://w3id.org/cacao/CACAO_0000083
+<http://w3id.org/cacao/CACAO_0000083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000083> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000082> .
+<http://w3id.org/cacao/CACAO_0000083> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000083> <http://purl.org/dc/elements/1.1/date> "2025-06-06T16:23:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000083> <http://www.w3.org/2000/01/rdf-schema#label> "Cup"@en .
+<http://w3id.org/cacao/CACAO_0000083> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises trophy cups, which are awards in the form of a drinking vessel, often made of precious metal and mounted on a base, given as a prize in a competition." .
+# 
+# http://w3id.org/cacao/CACAO_0000086
+<http://w3id.org/cacao/CACAO_0000086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000086> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000003> .
+<http://w3id.org/cacao/CACAO_0000086> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000086> <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000086> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
+<http://w3id.org/cacao/CACAO_0000086> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises digital artefacts that represent visual information, such as a photograph, drawing, or graphic. They are stored as a raster or vector file format." .
+# 
+# http://w3id.org/cacao/CACAO_0000087
+<http://w3id.org/cacao/CACAO_0000087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000087> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000003> .
+<http://w3id.org/cacao/CACAO_0000087> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000087> <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:09Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000087> <http://www.w3.org/2000/01/rdf-schema#label> "3D Object"@en .
+<http://w3id.org/cacao/CACAO_0000087> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises digital artefacts that represent a three-dimensional object using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, and curved surfaces." .
+# 
+# http://w3id.org/cacao/CACAO_0000088
+<http://w3id.org/cacao/CACAO_0000088> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000088> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000003> .
+<http://w3id.org/cacao/CACAO_0000088> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000088> <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:14Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000088> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@en .
+<http://w3id.org/cacao/CACAO_0000088> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises digital artefacts consisting of a recording of moving visual images. It can include synchronized audio." .
+# 
+# http://w3id.org/cacao/CACAO_0000089
+<http://w3id.org/cacao/CACAO_0000089> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/cacao/CACAO_0000089> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000003> .
+<http://w3id.org/cacao/CACAO_0000089> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
+<http://w3id.org/cacao/CACAO_0000089> <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:18Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/cacao/CACAO_0000089> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@en .
+<http://w3id.org/cacao/CACAO_0000089> <http://www.w3.org/2004/02/skos/core#definition> "Scope note:\nThis class comprises digital artefacts consisting of sound recordings. This includes music, spoken word, and other forms of auditory information stored in a digital format." .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment
 <http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2643,7 +3116,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing
 <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> .
-<http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Asset> .
 <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises all persistent physical items with a relatively stable form, human-made or natural.\nDepending on the existence of natural boundaries of such things, the CIDOC CRM distinguishes the instances of E19 Physical Object from instances of E26 Physical Feature, such as holes, rivers, pieces of land, etc. Most instances of E19 Physical Object can be moved (if not too heavy), whereas features are integral to the surrounding matter.\nAn instance of E18 Physical Thing occupies not only a particular geometric space at any instant of its existence, but in the course of its existence it also forms a trajectory through spacetime, which occupies a real, that is phenomenal, volume in spacetime. We include in the occupied space the space filled by the matter of the physical thing and all its inner spaces, such as the interior of a box. For the purpose of more detailed descriptions of the presence of an instance of E18 Physical Thing in space and time it can be associated with its specific instance of E92 Spacetime Volume by the property P196 defines (is defined by). \nThe CIDOC CRM is generally not concerned with amounts of matter in fluid or gaseous states, as long as they are not confined in an identifiable way for an identifiable minimal time-span.\n\nExamples:\n- the Cullinan Diamond (E19) (Scarratt and Shor, 2006)\n- the cave “Ideon Andron” in Crete (E26) (Smith, 1844-49)\n- the Mona Lisa (E22) (Mohen, 2006)\n\nIn First Order Logic:\n- E18(x) ⇒ E72(x)\n"@en .
 <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> <http://www.w3.org/2000/01/rdf-schema#label> "E18 Chose matérielle"@fr .
 <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> <http://www.w3.org/2000/01/rdf-schema#label> "E18 Coisa Material"@pt .
@@ -2722,11 +3194,8 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.cidoc-crm.org/cidoc-crm/E21_Person
 <http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/2002/07/owl#equivalentClass> <https://schema.org/Person> .
 <http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> .
 <http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
-<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Party> .
-<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Thing> .
 <http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises real persons who live or are assumed to have lived. \nLegendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CIDOC CRM does not propose a specific form to support reasoning about possible identity.\nIn a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (an instance of E21 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of E21 Person does not imply that the concept comprises personae.\n\nExamples:\n- Tut-Ankh-Amun (Edwards and Boltin, 1979)\n- Nelson Mandela (Brown and Hort, 2006)\n\nIn First Order Logic:\n- E21(x) ⇒ E20(x)\n- E21(x) ⇒ E39(x)\n"@en .
 <http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/2000/01/rdf-schema#label> "E21 Person"@de .
 <http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/2000/01/rdf-schema#label> "E21 Person"@en .
@@ -2812,7 +3281,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.cidoc-crm.org/cidoc-crm/E30_Right
 <http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/odrl/2/Policy> .
 <http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
 <http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises legal privileges concerning material and immaterial things or their derivatives. \nThese include reproduction and property rights.\n\nExamples:\n- copyright held by ISO on ISO/CD 21127\n- ownership of the “Mona Lisa” by the museum of the Louvre, Paris, France\n\nIn First Order Logic:\n- E30(x) ⇒ E89(x)\n"@en .
 <http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/2000/01/rdf-schema#label> "E30 Direitos"@pt .
@@ -2894,7 +3362,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.cidoc-crm.org/cidoc-crm/E39_Actor
 <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/odrl/2/Party> .
 <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> .
 <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which they can be held responsible.\n\nExamples:\n- London and Continental Railways (E74)\n- the Governor of the Bank of England in 1975 (E21)\n- Sir Ian McKellen (E21) (Gibson, 1986)\n\nIn First Order Logic:\n- E39(x) ⇒ E77(x)\n"@en .
 <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/2000/01/rdf-schema#label> "E39 Actant"@fr .
@@ -3269,7 +3736,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object
 <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/odrl/2/Asset> .
 <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> .
 <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises those material or immaterial items to which instances of E30 Right, such as the right of ownership or use, can be applied. \nThis is generally true for all instances of E18 Physical Thing. In the case of instances of E28 Conceptual Object, however, the identity of an instance of E28 Conceptual Object or the method of its use may be too ambiguous to reliably establish instances of E30 Right, as in the case of taxa and inspirations. Ownership of corporations is currently regarded as out of scope of the CIDOC CRM.\n\nExamples:\n- the Cullinan diamond (E19) (Scarratt and Shor, 2006)\n- definition of the CIDOC Conceptual Reference Model Version 5.0.4 (E73) (ISO 21127: 2014)\n\nIn First Order Logic:\n- E72(x) ⇒ E70(x)\n"@en .
 <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/2000/01/rdf-schema#label> "E72 Legal Object"@en .
@@ -3312,7 +3778,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.cidoc-crm.org/cidoc-crm/E74_Group
 <http://www.cidoc-crm.org/cidoc-crm/E74_Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.cidoc-crm.org/cidoc-crm/E74_Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
-<http://www.cidoc-crm.org/cidoc-crm/E74_Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Party> .
 <http://www.cidoc-crm.org/cidoc-crm/E74_Group> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises any gatherings or organizations of human individuals or groups that act collectively or in a similar way due to any form of unifying relationship. In the wider sense this class also comprises official positions which used to be regarded in certain contexts as one actor, independent of the current holder of the office, such as the president of a country. In such cases, it may happen that the group never had more than one member. A joint pseudonym (i.e. a name that seems indicative of an individual but that is actually used as a persona by two or more people) is a particular case of E74 Group.\nA gathering of people becomes an instance of E74 Group when it exhibits organizational characteristics usually typified by a set of ideas or beliefs held in common, or actions performed together. These might be communication, creating some common artifact, a common purpose such as study, worship, business, sports, etc. Nationality can be modelled as membership in an instance of E74 Group. Married couples and other concepts of family are regarded as particular examples of E74 Group.\n\nExamples:\n- the Impressionists (Wilson, 1994)\n- the Navajo (Correll, 1972)\n- the Greeks (Williams, 1993)\n- the peace protestors in New York City on 15(th) February 2003\n- Exxon-Mobil (Raymond, 2006)\n- King Solomon and his wives (Thieberger, 1947)\n- the President of the Swiss Confederation\n- Nicolas Bourbaki [the collective pseudonym of a group of mathematicians, predominantly French alumni of the École normale supérieure] (Aczel, 2007)\n- Betty Crocker (Crocker, 2012)\n- Ellery Queen [Ellery Queen is a pseudonym created in 1929 by American crime fiction writers Frederic Dannay and Manfred Bennington Lee.] (Wheat, 2005)\n- Greenpeace\n- Paveprime Ltd\n- the National Museum of Denmark\n\nIn First Order Logic:\n- E74(x) ⇒ E39(x)\n"@en .
 <http://www.cidoc-crm.org/cidoc-crm/E74_Group> <http://www.w3.org/2000/01/rdf-schema#label> "E74 Group"@en .
 <http://www.cidoc-crm.org/cidoc-crm/E74_Group> <http://www.w3.org/2000/01/rdf-schema#label> "E74 Groupe"@fr .
@@ -3402,7 +3867,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> .
 <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> .
-<http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Asset> .
 <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.w3.org/2000/01/rdf-schema#comment> "Scope note:\nThis class comprises identifiable symbols and any aggregation of symbols, such as characters, identifiers, traffic signs, emblems, texts, data sets, images, musical scores, multimedia objects, computer program code, or mathematical formulae that have an objectively recognizable structure and that are documented as single units.\nIt includes sets of signs of any nature, which may serve to designate something, or to communicate some propositional content. An instance of E90 Symbolic Object may or may not have a specific meaning, for example an arbitrary character string.\nIn some cases, the content of an instance of E90 Symbolic Object may completely be represented by a serialized digital content model, such as a sequence of ASCII-encoded characters, an XML or HTML document, or a TIFF image. The property P3 has note and its subproperty P190 has symbolic content allow for the description of this content model. In order to disambiguate which symbolic level is the carrier of the meaning, the property P3.1 has type can be used to specify the encoding (e.g. “bit”, “Latin character”, RGB pixel).\n\nExamples:\n- ‘ecognizabl’\n- the “no-smoking” sign (E36)\n- “BM000038850.JPG” (E41) [identifies a digital image] (Natural History Museum, 2021)\n- image BM000038850.JPG from the Clayton Herbarium in London (E36) [depicts specimen of Verbesina virginica] (Natural History Museum, 2021)\n- the distribution of form, tone and colour found on Leonardo da Vinci’s painting named “Mona Lisa” in daylight (E36)\n- the Italian text of Dante’s “Divina Commedia” as found in the authoritative critical edition “La Commedia secondo l’antica vulgata a cura di Giorgio Petrocchi” (E33) (Petrocchi, 1967)\n\nIn First Order Logic:\n- E90(x) ⇒ E28(x)\n- E90(x) ⇒ E72(x)\n"@en .
 <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.w3.org/2000/01/rdf-schema#label> "E90 Objet symbolique"@fr .
 <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.w3.org/2000/01/rdf-schema#label> "E90 Symbolic Object"@en .
@@ -3461,7 +3925,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Agreement
 <http://www.w3.org/ns/odrl/2/Agreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Agreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
 <http://www.w3.org/ns/odrl/2/Agreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 <http://www.w3.org/ns/odrl/2/Agreement> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Assertion> .
 <http://www.w3.org/ns/odrl/2/Agreement> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Offer> .
@@ -3472,7 +3935,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Assertion
 <http://www.w3.org/ns/odrl/2/Assertion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Assertion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
 <http://www.w3.org/ns/odrl/2/Assertion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 <http://www.w3.org/ns/odrl/2/Assertion> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Offer> .
 <http://www.w3.org/ns/odrl/2/Assertion> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Privacy> .
@@ -3482,11 +3944,10 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Asset
 <http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> .
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> .
 # 
 # http://www.w3.org/ns/odrl/2/AssetCollection
 <http://www.w3.org/ns/odrl/2/AssetCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/AssetCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> .
 <http://www.w3.org/ns/odrl/2/AssetCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Asset> .
 # 
 # http://www.w3.org/ns/odrl/2/ConflictTerm
@@ -3509,7 +3970,6 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Offer
 <http://www.w3.org/ns/odrl/2/Offer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
 <http://www.w3.org/ns/odrl/2/Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 <http://www.w3.org/ns/odrl/2/Offer> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Privacy> .
 <http://www.w3.org/ns/odrl/2/Offer> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Request> .
@@ -3521,38 +3981,37 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Party
 <http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> .
-<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
-_:genid63 <http://www.w3.org/2002/07/owl#unionOf> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Organization> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Individual> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Agent> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Person> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Organization> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#unionOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Organization> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Individual> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Agent> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Person> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Organization> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/odrl/2/PartyCollection
 <http://www.w3.org/ns/odrl/2/PartyCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/PartyCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
 <http://www.w3.org/ns/odrl/2/PartyCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Party> .
 # 
 # http://www.w3.org/ns/odrl/2/PartyScope
@@ -3565,11 +4024,9 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Policy
 <http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
 # 
 # http://www.w3.org/ns/odrl/2/Privacy
 <http://www.w3.org/ns/odrl/2/Privacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Privacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
 <http://www.w3.org/ns/odrl/2/Privacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 <http://www.w3.org/ns/odrl/2/Privacy> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Request> .
 <http://www.w3.org/ns/odrl/2/Privacy> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Set> .
@@ -3581,7 +4038,6 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Request
 <http://www.w3.org/ns/odrl/2/Request> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Request> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
 <http://www.w3.org/ns/odrl/2/Request> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 <http://www.w3.org/ns/odrl/2/Request> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Set> .
 <http://www.w3.org/ns/odrl/2/Request> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Ticket> .
@@ -3594,13 +4050,11 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Set
 <http://www.w3.org/ns/odrl/2/Set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Set> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
 <http://www.w3.org/ns/odrl/2/Set> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 <http://www.w3.org/ns/odrl/2/Set> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Ticket> .
 # 
 # http://www.w3.org/ns/odrl/2/Ticket
 <http://www.w3.org/ns/odrl/2/Ticket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
 <http://www.w3.org/ns/odrl/2/Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 # 
 # http://www.w3.org/ns/odrl/2/UndefinedTerm
@@ -3608,6 +4062,16 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent (eg. person, group, software or physical artifact)." .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "A document." .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document" .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -3673,9 +4137,6 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://schema.org/Person
 <https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> .
-<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
-<https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Party> .
 <https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Thing> .
 <https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person (alive, dead, undead, or fictional)."@en .
 <https://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/Person> .
@@ -3735,6 +4196,13 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://schema.org/URL> <http://www.w3.org/2000/01/rdf-schema#comment> "Data type: URL."@en .
 <https://schema.org/URL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/URL> .
 <https://schema.org/URL> <http://www.w3.org/2000/01/rdf-schema#label> "URL"@en .
+# 
+# https://schema.org/WebPage
+<https://schema.org/WebPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/WebPage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/CreativeWork> .
+<https://schema.org/WebPage> <http://www.w3.org/2000/01/rdf-schema#comment> "A web page. Every web page is implicitly assumed to be declared to be of type WebPage, so the various properties about that webpage, such as <code>breadcrumb</code> may be used. We recommend explicit declaration if these properties are specified, but if they are found outside of an itemscope, they will be assumed to be about the page."@en .
+<https://schema.org/WebPage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/WebPage> .
+<https://schema.org/WebPage> <http://www.w3.org/2000/01/rdf-schema#label> "WebPage"@en .
 # 
 # 
 # 
@@ -6533,9 +7001,6 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://schema.org/roleName
 <https://schema.org/roleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#comment> "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'."@en .
-<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/roleName> .
-<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#label> "roleName"@en .
 # 
 # https://schema.org/runtime
 <https://schema.org/runtime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -7064,5 +7529,9 @@ _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.w3.org/ns/odrl/2/xone> <http://www.w3.org/2000/01/rdf-schema#label> "Only One"@en .
 <http://www.w3.org/ns/odrl/2/xone> <http://www.w3.org/2004/02/skos/core#definition> "The relation is satisfied when only one, and not more, of the Constaints is satisfied"@en .
 <http://www.w3.org/ns/odrl/2/xone> <http://www.w3.org/2004/02/skos/core#note> "This property MUST only be used for Logical Constraints, and the list of operand values MUST be Constraint instances."@en .
+# 
+<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#comment> "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'."@en .
+<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/roleName> .
+<https://schema.org/roleName> <http://www.w3.org/2000/01/rdf-schema#label> "roleName"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
