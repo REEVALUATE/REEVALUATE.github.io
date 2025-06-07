@@ -2214,6 +2214,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/cacao/CACAO_0000003"
+  }, {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Scope note:\nThis class comprises digital artefacts that represent visual information, such as a photograph, drawing, or graphic. They are stored as a raster or vector file format."
@@ -2234,6 +2236,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/cacao/CACAO_0000003"
+  }, {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Scope note:\nThis class comprises digital artefacts that represent a three-dimensional object using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, and curved surfaces."
@@ -2254,6 +2258,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/cacao/CACAO_0000003"
+  }, {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Scope note:\nThis class comprises digital artefacts consisting of a recording of moving visual images. It can include synchronized audio."
@@ -2291,10 +2297,10 @@
     "@value" : "Cultural Artefact Contextual Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://w3id.org/cacao/cacao/releases/2025-06-06/cacao.owl"
+    "@id" : "http://w3id.org/cacao/cacao/releases/2025-06-07/cacao.owl"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "2025-06-06"
+    "@value" : "2025-06-07"
   } ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment",

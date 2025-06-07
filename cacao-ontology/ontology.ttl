@@ -7,11 +7,11 @@
 @base <http://w3id.org/cacao/cacao.owl#> .
 
 <http://w3id.org/cacao/cacao.owl> rdf:type owl:Ontology ;
-                                   owl:versionIRI <http://w3id.org/cacao/cacao/releases/2025-06-06/cacao.owl> ;
+                                   owl:versionIRI <http://w3id.org/cacao/cacao/releases/2025-06-07/cacao.owl> ;
                                    <http://purl.org/dc/terms/description> "None" ;
                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/unspecified> ;
                                    <http://purl.org/dc/terms/title> "Cultural Artefact Contextual Ontology" ;
-                                   owl:versionInfo "2025-06-06" .
+                                   owl:versionInfo "2025-06-07" .
 
 #################################################################
 #    Annotation properties
@@ -4716,7 +4716,8 @@ This class comprises trophy cups, which are awards in the form of a drinking ves
 
 ###  http://w3id.org/cacao/CACAO_0000086
 <http://w3id.org/cacao/CACAO_0000086> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://w3id.org/cacao/CACAO_0000003> ;
+                                      rdfs:subClassOf <http://w3id.org/cacao/CACAO_0000003> ,
+                                                      <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
                                       <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> ;
                                       <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:03Z"^^xsd:dateTime ;
                                       rdfs:label "Image"@en ;
@@ -4726,7 +4727,8 @@ This class comprises digital artefacts that represent visual information, such a
 
 ###  http://w3id.org/cacao/CACAO_0000087
 <http://w3id.org/cacao/CACAO_0000087> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://w3id.org/cacao/CACAO_0000003> ;
+                                      rdfs:subClassOf <http://w3id.org/cacao/CACAO_0000003> ,
+                                                      <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
                                       <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> ;
                                       <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:09Z"^^xsd:dateTime ;
                                       rdfs:label "3D Object"@en ;
@@ -4736,7 +4738,8 @@ This class comprises digital artefacts that represent a three-dimensional object
 
 ###  http://w3id.org/cacao/CACAO_0000088
 <http://w3id.org/cacao/CACAO_0000088> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://w3id.org/cacao/CACAO_0000003> ;
+                                      rdfs:subClassOf <http://w3id.org/cacao/CACAO_0000003> ,
+                                                      <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
                                       <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> ;
                                       <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:14Z"^^xsd:dateTime ;
                                       rdfs:label "Video"@en ;

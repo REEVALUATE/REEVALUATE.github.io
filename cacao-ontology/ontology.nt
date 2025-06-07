@@ -1,9 +1,9 @@
 <http://w3id.org/cacao/cacao.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://w3id.org/cacao/cacao.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/cacao/cacao/releases/2025-06-06/cacao.owl> .
+<http://w3id.org/cacao/cacao.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/cacao/cacao/releases/2025-06-07/cacao.owl> .
 <http://w3id.org/cacao/cacao.owl> <http://purl.org/dc/terms/description> "None" .
 <http://w3id.org/cacao/cacao.owl> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/unspecified> .
 <http://w3id.org/cacao/cacao.owl> <http://purl.org/dc/terms/title> "Cultural Artefact Contextual Ontology" .
-<http://w3id.org/cacao/cacao.owl> <http://www.w3.org/2002/07/owl#versionInfo> "2025-06-06" .
+<http://w3id.org/cacao/cacao.owl> <http://www.w3.org/2002/07/owl#versionInfo> "2025-06-07" .
 # 
 # 
 # #################################################################
@@ -3044,6 +3044,7 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://w3id.org/cacao/CACAO_0000086
 <http://w3id.org/cacao/CACAO_0000086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/cacao/CACAO_0000086> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000003> .
+<http://w3id.org/cacao/CACAO_0000086> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> .
 <http://w3id.org/cacao/CACAO_0000086> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
 <http://w3id.org/cacao/CACAO_0000086> <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000086> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
@@ -3052,6 +3053,7 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://w3id.org/cacao/CACAO_0000087
 <http://w3id.org/cacao/CACAO_0000087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/cacao/CACAO_0000087> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000003> .
+<http://w3id.org/cacao/CACAO_0000087> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> .
 <http://w3id.org/cacao/CACAO_0000087> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
 <http://w3id.org/cacao/CACAO_0000087> <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:09Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000087> <http://www.w3.org/2000/01/rdf-schema#label> "3D Object"@en .
@@ -3060,6 +3062,7 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://w3id.org/cacao/CACAO_0000088
 <http://w3id.org/cacao/CACAO_0000088> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/cacao/CACAO_0000088> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/cacao/CACAO_0000003> .
+<http://w3id.org/cacao/CACAO_0000088> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> .
 <http://w3id.org/cacao/CACAO_0000088> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-0905-7033> .
 <http://w3id.org/cacao/CACAO_0000088> <http://purl.org/dc/elements/1.1/date> "2025-06-06T17:06:14Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/cacao/CACAO_0000088> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@en .
